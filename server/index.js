@@ -9,11 +9,11 @@ const serveAbout = (req, res, next) => {
   res.send('<h1>About</h1>');
 }
 const serveHello = (req, res, next) => {
-    const name = req.query.name || 'Gimme yo name';
-    res.send(`Hello ${name}`);
+    const name = req.query.username || 'unregistered person';
+    res.send(`Hello ${username}`);
 }
 const serveData = (req, res, next) => {
-  const data = [{ name: 'ben' }, { name: 'zo' }, { name: 'carmen' }];
+  const data = [{ username: 'Elver_Galarga' }, { username: 'Ana_Lisa_Melculo' }, { username: 'Elva_Gina' }, { username: 'Debora_Melo' }];
   res.send(data);
 }
 
