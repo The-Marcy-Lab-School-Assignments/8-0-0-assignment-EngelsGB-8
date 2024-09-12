@@ -10,7 +10,7 @@ const serveAbout = (req, res, next) => {
 }
 const serveHello = (req, res, next) => {
     const name = req.query.username || 'unregistered person';
-    res.send(`Hello ${username}`);
+    res.send(`Hello ${username}`);// here you wrote username, but you did not declare it anywhere. you should have used name.
 }
 const serveData = (req, res, next) => {
   const data = [{ username: 'Elver_Galarga' }, { username: 'Ana_Lisa_Melculo' }, { username: 'Elva_Gina' }, { username: 'Debora_Melo' }];
